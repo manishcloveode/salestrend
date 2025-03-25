@@ -283,10 +283,10 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom line with back to top button */}
-                <div className="mt-12 pt-8 border-t border-gray-200 flex justify-end">
+                <div className="relative">
                     <button
                         onClick={scrollToTop}
-                        className="p-3 bg-emerald-600 text-white rounded-full hover:bg-emerald-700 transition-colors"
+                        className="fixed bottom-5 right-5 p-3 bg-emerald-600 text-white rounded-full shadow-lg hover:bg-emerald-700 transition-colors"
                         aria-label="Back to top"
                     >
                         <ChevronUp className="h-5 w-5" />

@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import { Plus, Minus, MoveRight } from 'lucide-react'
+import { Plus, MoveRight, X } from 'lucide-react'
 const processes = [
     {
         number: "01",
@@ -68,7 +68,7 @@ export default function FaqSection() {
                                 <div className="mt-4 md:mt-0 md:ml-4 flex-shrink-0">
                                     <div className="rounded-full border border-black w-8 h-8 md:w-10 md:h-10 flex items-center justify-center">
                                         {openIndex === index ? (
-                                            <Minus className="h-6 w-6 md:h-6 md:w-6 font-bold" />
+                                            <X className="h-6 w-6 md:h-6 md:w-6 font-bold" />
                                         ) : (
                                             <Plus className="h-6 w-6 md:h-6 md:w-6" />
                                         )}
