@@ -4,7 +4,7 @@ import { Toggle } from "@/components/ui/toggle"
 
 export default function Demo() {
     return (
-        <main className="min-h-screen flex flex-col items-center justify-center p-4 md:p-8">
+        <main className="container flex flex-col items-center justify-center p-4 md:p-8">
             <section className="max-w-4xl w-full mx-auto text-center">
                 <h1 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
                     No long-term contracts. No catches. Simple.

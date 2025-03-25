@@ -63,14 +63,14 @@ export default function InsightsSection() {
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 h-[550px] gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {posts.map((post) => (
                             <Card key={post.id} className="overflow-hidden border-none rounded-xl">
-                                <div className="relative h-48 w-full overflow-hidden">
+                                <div className="relative h-96 w-full overflow-hidden">
                                     <Image src={post.image || "/placeholder.svg"} alt={post.title} fill className="object-cover" />
                                 </div>
-                                <CardContent className="p-6">
-                                    <div className="space-y-4">
+                                <CardContent className="p-2">
+                                    <div className="space-y-2">
                                         <p className="text-sm font-medium text-emerald-700">{post.category}</p>
                                         <Link href="#" className="group flex items-center justify-between">
                                             <h3 className="text-xl font-bold">{post.title}</h3>
